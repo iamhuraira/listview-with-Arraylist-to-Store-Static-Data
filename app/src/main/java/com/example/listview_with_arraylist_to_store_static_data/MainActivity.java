@@ -8,6 +8,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 public class MainActivity extends AppCompatActivity {
     Button btn;
     ListView lstview;
@@ -16,6 +18,40 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ArrayList<String> abclist = new ArrayList<>();
+        abclist.add("A");
+        abclist.add("B");
+        abclist.add("C");
+        abclist.add("D");
+        abclist.add("E");
+        abclist.add("F");
+        abclist.add("G");
+        abclist.add("H");
+        abclist.add("I");
+        abclist.add("J");
+        abclist.add("K");
+        abclist.add("L");
+        abclist.add("M");
+        abclist.add("N");
+        abclist.add("O");
+        abclist.add("P");
+        abclist.add("Q");
+        abclist.add("R");
+        abclist.add("S");
+        abclist.add("T");
+        abclist.add("U");
+        abclist.add("V");
+        abclist.add("W");
+        abclist.add("X");
+        abclist.add("Y");
+        abclist.add("Z");
+
+
+
+
+
+
+
     }
 
     public void enterNameToList(View view) {
