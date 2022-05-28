@@ -54,7 +54,15 @@ public class MainActivity extends AppCompatActivity {
 
         lstview = findViewById(R.id.lstview);
         lstview.setAdapter(abcAdapter);
-
+        btn = findViewById(R.id.btnEnter);
+        editText = findViewById(R.id.editTextEnterName);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                abclist.add(editText.getText().toString());
+                abcAdapter.notifyDataSetChanged();
+            }
+        });
 
     }
 
