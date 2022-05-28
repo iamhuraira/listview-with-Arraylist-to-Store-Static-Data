@@ -12,6 +12,7 @@ import android.widget.ListView;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+    ArrayList<String> abclist = new ArrayList<>();
     Button btn;
     ListView lstview;
     EditText editText;
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ArrayList<String> abclist = new ArrayList<>();
+
         abclist.add("A");
         abclist.add("B");
         abclist.add("C");
@@ -51,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String> abcAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,abclist);
 
 
-
+        lstview = findViewById(R.id.lstview);
+        lstview.setAdapter(abcAdapter);
 
 
     }
